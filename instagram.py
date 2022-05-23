@@ -3,8 +3,8 @@ import pandas as pd
 from datetime import datetime
 # Import sys dependency to extract command line arguments
 import sys
-
-session_id = "51793124582%3AizwecwbFcpx5hb%3A7"
+import os
+session_id = os.getenv('INSTAGRAM_SESSION_ID')
 
 
 def get_analysis(usernames=['hamaki','mekkystyle','hanadymehanna']):
